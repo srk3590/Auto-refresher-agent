@@ -1,0 +1,31 @@
+{
+  "name": "token-refresher-agent",
+  "version": "1.0.0",
+  "description": "Automated token refresher agent for authentication management",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "refresh": "node index.js --mode=manual",
+    "auto": "node index.js --mode=auto",
+    "test": "node test-connection.js",
+    "view": "node view-token.js",
+    "setup": "node setup.js",
+    "verify": "node verify.js"
+  },
+  "keywords": [
+    "token",
+    "authentication",
+    "refresh",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.3.1",
+    "yargs": "^17.7.2",
+    "chalk": "^5.3.0"
+  }
+}

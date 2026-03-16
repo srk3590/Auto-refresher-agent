@@ -1,0 +1,29 @@
+{
+  "description": "Token Refresher Agent Configuration Template",
+  "authentication": {
+    "username": "your_username@example.com",
+    "password": "your_password",
+    "apiEndpoint": "https://auth.talarianweb.com/oauth2/token",
+    "note": "Replace with your actual credentials and endpoint"
+  },
+  "refreshSettings": {
+    "autoRefresh": false,
+    "refreshInterval": "*/30 * * * *",
+    "intervalExamples": {
+      "every15Minutes": "*/15 * * * *",
+      "every30Minutes": "*/30 * * * *",
+      "everyHour": "0 * * * *",
+      "every2Hours": "0 */2 * * *",
+      "everyDay": "0 0 * * *"
+    }
+  },
+  "paths": {
+    "tokenServicePath": "../../libs/core/src/lib/services/token.service.ts",
+    "tokenCachePath": "./.token-cache.json"
+  },
+  "apiEndpointExamples": {
+    "okta": "https://auth.talarianweb.com/oauth2/token",
+    "custom": "http://ociqaintx.talarianweb.com:8080/api/auth",
+    "note": "Update based on your authentication provider"
+  }
+}
