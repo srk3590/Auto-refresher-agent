@@ -2,6 +2,12 @@
 
 Automatically refreshes JWT tokens for local development by updating `token.service.ts` on a schedule.
 
+## Why Use This?
+
+- No more manually copying tokens from Bruno every 2 hours when they expire
+- No more restarting the app or getting 401 errors mid-development
+- Set it up once and forget — tokens stay fresh automatically in the background
+
 ## How It Works
 
 ```
@@ -43,6 +49,19 @@ npm run auto
 ```
 
 Keep the terminal open. Tokens refresh automatically per the configured interval (`REFRESH_INTERVAL` in `.env`).
+
+### What to enter during `npm run setup`
+
+Use the same credentials you use in Bruno to fetch the token manually:
+
+| Prompt | Value |
+|--------|-------|
+| Username | <username> |
+| Password | <password> |
+| API Endpoint | <URL>
+| Refresh Interval | e.g. `0 * * * *` for every hour (or press Enter to keep current) |
+
+> These are the same credentials and endpoint URL from your Bruno auth request.
 
 ### Other Commands
 
