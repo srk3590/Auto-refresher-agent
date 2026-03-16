@@ -56,9 +56,9 @@ Use the same credentials you use in Bruno to fetch the token manually:
 
 | Prompt | Value |
 |--------|-------|
-| Username | <username> |
-| Password | <password> |
-| API Endpoint | <URL>
+| Username | `xactly_user@xactlycorp.com` |
+| Password | `demoUser1` |
+| API Endpoint | `https://example.com/iam/auth/token` |
 | Refresh Interval | e.g. `0 * * * *` for every hour (or press Enter to keep current) |
 
 > These are the same credentials and endpoint URL from your Bruno auth request.
